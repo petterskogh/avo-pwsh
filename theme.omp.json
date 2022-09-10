@@ -1,0 +1,92 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "blocks": [
+    {
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "background": "#8AF78C",
+          "foreground": "#2E2C3D",
+          "leading_diamond": "",
+          "properties": {
+            "style": "agnoster_full"
+          },
+          "style": "diamond",
+          "trailing_diamond": "\ue0b0",
+          "template": " {{ path .Path .Location }} ",
+          "type": "path"
+        },
+        {
+          "background": "#437845",
+          "foreground": "#eeffe4",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
+          "properties": {
+            "branch_max_length": 25,
+            "fetch_stash_count": true,
+            "fetch_status": true,
+            "fetch_upstream_icon": true,
+            "branch_identical_icon": ""
+          },
+          "template": " {{ .UpstreamIcon }} {{ .HEAD }}{{ .BranchStatus }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \uf692 {{ .StashCount }}{{ end }} ",
+          "trailing_diamond": "\ue0b4",
+          "type": "git"
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "left",
+      "segments": [
+        {
+          "type": "command",
+          "style": "plain",
+          "foreground": "#9583be",
+          "properties": {
+            "shell": "PowerShell",
+            "command": "git log --pretty=format:%s -1"
+          }
+        },
+        {
+          "foreground": "#9583be",
+          "properties": {
+            "fetch_version": true
+          },
+          "style": "powerline",
+          "template": "| \ue718 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }}",
+          "type": "node"
+        },
+        {
+          "foreground": "#FF4F5F",
+          "style": "diamond",
+          "template": "{{ if gt (div ((sub .PhysicalTotalMemory .PhysicalFreeMemory)|float64) 1000000000.0) (div (div .PhysicalTotalMemory 1000000000.0) 2) }}<#cc7eda> \u007C </>RAM: {{ (div ((sub .PhysicalTotalMemory .PhysicalFreeMemory)|float64) 1000000000.0) }}/{{ (div .PhysicalTotalMemory 1000000000.0) }}GB{{ end }}",
+          "type": "sysinfo"
+        },
+        {
+          "foreground": "#FF4F5F",
+          "invert_powerline": true,
+          "style": "powerline",
+          "template": "{{ if lt .Percentage 30 }}<#9583be> | </>{{ if not .Error }}\ue234 {{ .Percentage }}{{ end }}{{ .Error }}\uf295{{ end }}",
+          "type": "battery"
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "foreground": "#f3ae35",
+          "style": "plain",
+          "template": "🥑",
+          "type": "text"
+        }
+      ],
+      "type": "prompt"
+    }
+  ],
+  "final_space": true,
+  "version": 2
+}
