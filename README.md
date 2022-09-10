@@ -1,6 +1,6 @@
 # AvoShell
 
-Avocado powered PowerShell setup.
+Avocado powered PowerShell setup. Inspired by from [Hanselmans Ultimate PowerShell prompt](https://www.hanselman.com/blog/my-ultimate-powershell-prompt-with-oh-my-posh-and-the-windows-terminal?fbclid=IwAR0O6er7XgH5zY1oC6lCwK7ICjfqJvY8lTkvmwkAltPxeSFlyYEs23N3Y9E).
 
 ![Image of terminal with AvoShell setup](./AvoShellScreenshot.png)
 
