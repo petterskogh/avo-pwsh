@@ -2,6 +2,8 @@
 
 Avocado powered PowerShell setup.
 
+![Image of terminal with AvoShell setup](./AvoShellScreenshot.png)
+
 ## Features
 
 * Open explorer on ctrl + click on path
