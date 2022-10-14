@@ -1,6 +1,6 @@
 # AvoShell
 
-Avocado powered PowerShell setup. Inspired by from [Hanselmans Ultimate PowerShell prompt](https://www.hanselman.com/blog/my-ultimate-powershell-prompt-with-oh-my-posh-and-the-windows-terminal?fbclid=IwAR0O6er7XgH5zY1oC6lCwK7ICjfqJvY8lTkvmwkAltPxeSFlyYEs23N3Y9E).
+Avocado powered PowerShell setup. Inspired by [Hanselmans Ultimate PowerShell prompt](https://www.hanselman.com/blog/my-ultimate-powershell-prompt-with-oh-my-posh-and-the-windows-terminal?fbclid=IwAR0O6er7XgH5zY1oC6lCwK7ICjfqJvY8lTkvmwkAltPxeSFlyYEs23N3Y9E).
 
 ![Image of terminal with AvoShell setup](./AvoShellScreenshot.png)
 
@@ -24,7 +24,7 @@ When you have PowerShell installed, get Oh My Posh. This can be done easily by f
 * Install NerdFont (Includes icons needed)
 * Configure your terminal to use font
 
-To use the setup in this repo, add [theme.omp.json](./theme.omp.json) to the location pointed to by the environment variable POSH_THEMES_PATH (default path is C:\Users\[user]\AppData\Local\Programs\oh-my-posh\themes). Add the following line to your PowerShell profile (open with VS Code: code $PROFILE).
+To use the setup in this repo, add [theme.omp.json](./theme.omp.json) to the location pointed to by the environment variable POSH_THEMES_PATH (default path is C:\Users\\[user]\AppData\Local\Programs\oh-my-posh\themes). Add the following line to your PowerShell profile (open with VS Code: code $PROFILE).
 
 ```
 oh-my-posh --init --shell pwsh --config "$env:POSH_THEMES_PATH\theme.omp.json" | Invoke-Expression
