@@ -6,12 +6,17 @@ Avocado powered PowerShell setup. Inspired by [Hanselmans Ultimate PowerShell pr
 
 ## Features
 
-* 📂 Open explorer on ctrl + click on path
-* 📜 Displays git repo status, including changed and stashed files
-* 💁‍♀️ Displays latest git commit
-* 🔋 Displays battery if low 
-* 💽 Displays RAM if high
-* 👁️‍🗨️ Predictive autocomplete
+📂 Open explorer on ctrl + click on path
+
+📜 Displays git repo status, including changed and stashed files
+
+💁‍♀️ Displays latest git commit
+
+🔋 Displays battery if low 
+
+💽 Displays RAM if high
+
+👁️‍🗨️ Predictive autocomplete
 
 ## Install PowerShell
 
@@ -38,20 +43,23 @@ code "$env:POSH_THEMES_PATH\theme.omp.json"
 
 ## Install and setup predictive autocomplete
 
-To install autocomplete, run the following command in PowerShell
+To install autocomplete, run the following commands in PowerShell
 
 ```
 Install-Module PSReadLine -AllowPrerelease -Force
+Install-Module PowerType -AllowPrerelease
 ```
 
 Then add the following lines to your PowerShell profile
 
 ```
 Import-Module PSReadLine
-Set-PSReadLineOption -PredictionSource History
-Set-PSReadLineOption -PredictionViewStyle ListView
+Enable-PowerType
+Set-PSReadLineOption -PredictionSource HistoryAndPlugin -PredictionViewStyle ListView
 Set-PSReadLineOption -EditMode Windows
 ```
+
+View [Profile.ps1](./Profile.ps1) for full profile
 
 ## Unleash the power of Kanye [Ye] West
 
