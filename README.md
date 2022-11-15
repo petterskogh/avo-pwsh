@@ -8,13 +8,13 @@ Avocado powered PowerShell setup. Inspired by [Hanselmans Ultimate PowerShell pr
 
 📂 Open explorer on ctrl + click on path
 
-📜 Displays git repo status, including changed and stashed files
+📜 Display git repo status, including changed and stashed files
 
-💁‍♀️ Displays latest git commit
+💁‍♀️ Display latest git commit
 
-🔋 Displays battery if low 
+🔋 Display battery if low 
 
-💽 Displays RAM if high
+💽 Display RAM if high
 
 👁️‍🗨️ Predictive autocomplete
 
