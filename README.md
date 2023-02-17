@@ -41,6 +41,8 @@ To edit the theme in VS Code, run the following line in your terminal.
 code "$env:POSH_THEMES_PATH\theme.omp.json"
 ```
 
+Update theme colors in your terminal to make it look sexy.
+
 ## Install and setup predictive autocomplete
 
 To install autocomplete, run the following commands in PowerShell
