@@ -26,7 +26,7 @@ To get started install the .NET Core powered PowerShell from the [Microsoft Stor
 
 When you have PowerShell installed, get Oh My Posh. This can be done easily by following their guide at [Oh My Posh Installation](https://ohmyposh.dev/docs/installation/windows). Use it to: 
 * Install Oh My Posh
-* Install [NerdFont]() (Includes icons needed)
+* Install [NerdFont](https://www.nerdfonts.com/font-downloads) (Includes icons needed)
 * Configure your terminal to use font
 
 To use the setup in this repo, add [theme.omp.json](./theme.omp.json) to the location pointed to by the environment variable POSH_THEMES_PATH (default path is C:\Users\\[user]\AppData\Local\Programs\oh-my-posh\themes). Add the following line to your PowerShell profile (open with VS Code: `code $PROFILE`).
