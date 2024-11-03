@@ -62,11 +62,3 @@ Set-PSReadLineOption -EditMode Windows
 ```
 
 View [Profile.ps1](./Profile.ps1) for full profile
-
-## Unleash the power of Kanye [Ye] West
-
-Not interested in seeing the latest git commit? Then you might be interested in getting quotes from Kanye West. Replace the command in the git log command segment with the following line to get a new Kanye West quote for each command.
-
-```
-$response = Invoke-RestMethod -Uri \"https://api.kanye.rest/\"; $response.quote
-```
